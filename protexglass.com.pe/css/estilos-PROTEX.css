@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300;1,700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap');
+
+/*
+AZUL ##3F78BB;
+ROJO #DB2326;
+*/
+
+/*ESTILOS GENERALES*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #333;
+}
+img {
+	display: block;
+  width: 100%;
+}
+ul, li {
+	list-style: none;
+}
+a {
+	display: block;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5 {
+font-family: 'Exo', sans-serif;
+}
+P {
+font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+	width: 95%;
+	margin: auto;
+	max-width: 1400px;
+}
+.section {
+  padding: 80px 0; 
+	overflow: hidden;
+}
+.titulo {
+	text-align: center;
+	font-size: 2em;
+	color: #333;
+}
+.rubros {
+	font-size: 1.2em;
+	text-align: center;
+	padding: 20px 0;
+}
+/*BOTON FLOTANTE WASAP*/
+.wa-img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+	text-align: center;
+  z-index: 999;
+}
+
+/*ICONOS IMG*/
+.iconos-img {
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	margin-right: 10px;
+}
+
+/*LOGO SUPERIOR*/
+.logo-superior {
+	overflow: hidden;
+	max-width: 1500px;
+	margin: auto;
+	background: #fff;
+	padding: 10px 0;
+}
+.logotipo-header {
+	width: 240px;
+}
+.logosuperior-datos {
+	display: none;
+}
+
+/*HEADER*/
+.header {
+	overflow: hidden;
+  max-width: 1500px;
+  margin: auto;
+	background: #fff;
+}
+
+/*--------------------BANNER--------------------*/
+.mockfondo-index {
+  overflow: hidden;
+  max-width: 1500px;
+  margin: auto;
+	background-image: url(../img/index-banner.jpg);
+	background-size: cover;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+}
+.mockfondo-index:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+}
+.textos-banner {
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 95%
+}
+.banner-txt {
+  text-align: center;
+  color: #fff;
+  font-size: 2.3em;
+  line-height: 1.2em;
+	font-weight: 700;
+}
+.banner-txt2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+.banner-txt3 {
+	width: 220px;
+	margin: auto;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+	border: 3px solid #DB2326;
+  font-size: 1.2em;
+	border-radius: 5px;
+}
+
+/* --------------INDEX PRESENTACION--------------*/
+#presentacion {
+	max-width: 1500px;
+	margin: auto;
+	background: #fff;
+}
+.grupo-presentacion {
+  max-width: 1200px;
+  margin: auto;
+}
+.columna-presentacion {
+	margin: 5px auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px dashed #999;
+}
+.presentacion-img {
+	width: 280px;
+	height: 280px;
+	object-fit: cover;
+	margin: auto;
+	border-radius: 50%;
+}
+.vermas {
+	font-family: 'Exo', sans-serif;
+	font-weight: 700;
+	width: 180px;
+	margin: auto;
+  padding: 5px;
+  text-align: center;
+  color: #333;
+	border: 3px solid #DB2326;
+  font-size: 0.9em;
+	border-radius: 5px;
+}
+
+
+/* -------------------INDEX NOSOTROS-------------------*/
+#nosotros {
+	max-width: 1500px;
+	margin: auto;
+	background: #fff;
+}
+.grupo-nosotros {
+  max-width: 1200px;
+  margin: auto;
+}
+.grupo-indicativos .icon-check-circle {
+	position: relative;
+	top: 4px;
+	font-size: 1.2em;
+	color: #DB2326;
+}
+.grupo-indicativos {
+  padding: 0 10px;
+}
+#nosotros .rubros {
+	text-align: left;
+}
+.nosotros-img {
+	border-bottom-left-radius: 80px;
+	border-top-right-radius: 80px;
+}
+/*valores*/
+#valores {
+	max-width: 1500px;
+	margin: auto;
+}
+.grupo-valores {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.columna-valores {
+	width: 48%;
+	margin: 1%;
+	border: 1px dashed #999;
+	padding: 10px;
+}
+.valores-img {
+	width: 100px;
+	margin: auto;
+}
+.valores-titulo {
+	font-size: 1.2em;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+/*SLOGAN INDEX*/
+.slogan-index {
+	position: relative;
+	max-width: 1500px;
+	margin: auto;
+  padding: 140px 0px;
+  background-image: url(../img/SLOGAN.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+.slogan-index:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+.slogan-index h2 {
+  color: #fff;
+	font-size: 2.1em;
+}
+
+/*ASESOR*/
+#asesor {
+	max-width: 1500px;
+	margin: auto;
+	background: #fff;
+	border-top: 1px dashed #999;
+}
+.asesor-img {
+	width: 255px;
+	height: 255px;
+	object-fit: cover;
+	margin: auto;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.asesor-titulo {
+	text-align: center;
+}
+.asesor-txt {
+	text-align: center;
+	padding: 10px;
+}
+.asesor-telef {
+	width: 220px;
+	margin: auto;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+	border: 3px solid #DB2326;
+  font-size: 1.2em;
+	border-radius: 5px;
+}
+
+/*BOTON FLOTANTE WASAP*/
+.btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+	text-align: center;
+  z-index: 999;
+}
+
+/*---------------------FOOTER---------------------*/
+.footer {
+background: #1d1d1d;
+background-image: url(../img/FOTO-FOOTER.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+overflow: hidden;
+max-width: 1500px;
+margin: auto;
+padding: 80px 0;
+}
+
+.footer-columna {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.logotipo-footer {
+	width: 300px;
+	margin: auto;
+	padding: 20px;
+}
+
+/*ICONOS IMG*/
+.footer .iconos-img {
+	position: relative;
+	top: 7px;
+	display: inline-block;
+	width: 34px;
+	margin-right: 10px;
+}
+.footer-subtitulo {
+  font-weight: 400;
+	color: #fff;
+}
+.footer-txt {
+  font-size: 0.9em;
+	padding: 20px 10px;
+	color: #eee;
+}
+.footer [class^="icon-"] {
+	padding-right: 10px;
+	font-size: 1.6em;
+	color: #fff;
+	position: relative;
+	top: 5px;
+}
+.copy-txt {
+	color: #eee;
+  font-size: 0.9em;
+	width: 100%;
+  text-align: center;
+	padding-top: 20px;
+	border-top: 1px dashed rgba(255,255,255,0.5);
+	position: relative;
+	z-index: 10;
+}
+.link-publimagen {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #fff;
+  font-size: 1em;
+}
+.footer-facebook {
+	width: 30px;
+}
+/*-------------ESTILOS RESPONSIVE WEB DESIGN-------------*/
+@media (min-width: 768px) {
+/*HEADER*/
+.logotipo-header {
+	width: 280px;
+}
+.logosuperior-datos {
+		display: flex;
+		justify-content: center;
+		margin-left: 30px;
+	}
+.grupo-logosuperior {
+		padding: 10px 0 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+.gruposuperior-datos {
+		display: flex;
+	}
+.datos-titulo {
+font-family: 'Exo', sans-serif;
+	font-weight: 700;
+	color: #4d4d4d;
+}
+.telefonos {
+font-family: 'Exo', sans-serif;
+	font-weight: 300;
+	font-size: 0.9em;
+	color: #4d4d4d;
+}
+/*BANNER*/
+.mockfondo-index {
+  height: 600px;
+}
+.banner-txt {
+  font-size: 4em;
+}
+.banner-txt2 {
+	max-width: 1000px;
+	margin: auto;
+  font-size: 2em;
+	margin-bottom: 20px;
+}
+/*	PRESENTACION*/
+.grupo-presentacion {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.columna-presentacion {
+	width: 32%;
+}
+
+}
+
+@media (min-width: 1024px) {
+/*NOSOTROS*/
+.grupo-nosotros {
+	display: flex;
+	justify-content: center;
+}
+	.columna-nosotros {
+		width: 50%;
+		padding: 20px;
+	}
+/*	valores*/
+	.columna-valores {
+	width: 23%;
+}
+	
+/*	ASESOR*/
+.grupo-asesor {
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	
+/*GRUPO FOOTER*/
+.grupo-footer {
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-columna {
+	width: 20%;
+}
+.copy-txt {
+	text-align: center;
+}
+
+}

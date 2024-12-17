@@ -1,0 +1,148 @@
+/*inicio menu para pc*/
+.contenedor-menu {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn-menu {
+  display: none;
+}
+.contenedor-menu label {
+  color: #DB2326;
+  font-size: 26px;
+  padding-top: 5px;
+  cursor: pointer;
+  display: none;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+.menu ul li {
+/*  border-right: 1px dashed rgba(0,0,0,.2);*/
+}
+.menu ul li:last-child {
+  border-right: none;
+}
+.menu ul ul {
+  display: none;
+}
+.menu-link {
+font-family: 'Exo', sans-serif;
+  font-size: 1em;
+	font-weight: 300;
+	text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+	color: #4d4d4d;
+	margin: 0 3px;
+}
+.menu-link:hover {
+	border-bottom: 5px solid #5A618B;
+}
+.menu a span {
+  margin-left: 10px;
+}
+
+/*estilos del submenu1 PARA PC*/
+.submenu1:hover ul {
+  background: rgba(0,0,0,.7);
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+.submenu1 ul a {
+	color: #eee;
+  padding: 7px 50px;
+}
+.submenu1 ul a span {
+  position: absolute;
+  left: 10px;
+  display: none;
+}
+.submenu1 ul a:hover span {
+  display: inline-block;
+}
+
+/*ocultar submenu, el cual tiene el evento "click" en submenu.js y que origina conficto en pantallas grandes*/
+.submenu {
+  display: none;
+}
+
+.select {
+	border-bottom: 5px solid #5A618B;
+}
+
+
+/*ESTILOS RESPONSIVE WEB DESIGN*/
+
+@media (max-width: 768px) {
+/*ocultar submenu1*/
+.submenu1 {
+  display: none;
+}
+.contenedor-menu label {
+  display: block;
+}
+
+/*activar submenu*/
+.submenu {
+  display: block;
+}
+.menu {
+  position: absolute;
+  z-index: 100;
+  top: 130px;
+  left: 0;
+  width: 90%;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+#btn-menu:checked ~ .menu {
+  transform: translateX(0%);
+}
+.menu a {
+	color: #eee;
+}
+.menu ul {
+  display: block;
+  background: rgba(0,0,0,0.7);
+}
+.menu ul li {
+  border-bottom: 1px dashed rgba(255,255,255,0.2);
+}
+.menu ul li:hover ul {
+  display: none;
+  position: static;
+}
+/*estilos submenu CELULARES*/
+.menu-link {
+	text-align: left;
+  padding: 10px 30px;
+	margin: 0;
+}
+.menu-link:hover {
+	border-radius: 0;
+
+}
+.submenu a span {
+  position: absolute;
+  right: 10px;
+}
+.submenu ul a span {
+  display: none;
+  left: 10px;
+}
+.submenu ul {
+  background: rgba(0,0,0,.9);
+}
+.submenu ul a {
+  padding: 5px 50px;
+}
+.submenu ul a:hover span {
+  display: inline-block;
+}
+}

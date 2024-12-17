@@ -1,0 +1,129 @@
+#servicios {
+	max-width: 1500px;
+	margin: auto;
+	background: #fff;
+}
+.grupo-servicios {
+	padding: 20px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#servicios .rubros {
+	text-align: left;
+}
+.servicios-img {
+	object-fit: cover;
+	height: 300px;
+	border-bottom-left-radius: 80px;
+	border-top-right-radius: 80px;
+}
+.resena-txt {
+	display: flex;
+	text-align: left;
+}
+.grupo-indicativos .icon-check-circle {
+	position: relative;
+	top: -1px;
+	font-size: 1.2em;
+	color: #DB2326;
+	margin-right: 10px;
+}
+.grupo-indicativos {
+  padding: 0 10px;
+}
+.columna-indicativos .resena-txt {
+	padding: 5px 0;
+	border-bottom: 1px dashed #999;
+}
+.columna-indicativos .resena-txt:last-child {
+	border-bottom: none;
+}
+
+/*SUBGRUPO*/
+.subgrupo-servicios {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.subcolumna-servicios {
+	border: 1px dashed #999;
+	padding: 20px;
+	width: 48%;
+	margin: 1%;
+}
+#servicios .rubros {
+	text-align: center;
+}
+.subservicios-img {
+	max-width: 200px;
+	margin: auto;
+}
+.esquirlas {
+
+}
+/*TONALIDADES*/
+.subgrupo-tonalidades {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.subcolumna-tonalidades {
+	border: 1px dashed #999;
+	padding: 40px 5px;
+	margin: 20px 0;
+}
+.tonalidades {
+	padding: 20px 5px;
+}
+.tonalidades-img {
+	
+}
+.tonalidades-rubros {
+	font-size: 1.8em;
+	text-align: center;
+	padding-top: 20px;
+	color: #DB2326;
+}
+/*-------------ESTILOS RESPONSIVE WEB DESIGN-------------*/
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+.grupo-servicios {
+display: flex;
+	justify-content: center;
+}
+	.servicios-img {
+	height: 400px;
+	}
+	.columna-servicios {
+		width: 50%;
+		padding: 20px;
+	}
+	.revers {
+		flex-direction: row-reverse;
+	}
+/*subservicios	*/
+	.columna-servicios .subcolumna-servicios {
+		width: 31%;
+	}
+	.subcolumna-servicios {
+	width: 30%;
+}
+/*	TONALIDADES*/
+	.subcolumna-tonalidades {
+	border: 1px dashed #999;
+	padding: 20px;
+	width: 48%;
+		margin: 1%;
+}
+	
+	
+	
+}
